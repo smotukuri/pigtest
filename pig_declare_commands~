@@ -3,5 +3,3 @@ student = LOAD '/home/orienit/Data/Inputs/student.txt' USING PigStorage(',') as 
 B = FILTER student by city eq '$CITY';
 dump B;
 
-C = foreach b generate *;
-
